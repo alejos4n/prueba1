@@ -2,8 +2,6 @@
 
 <h1>Todos</h1>
 
-
-
 <div class="new-list">
   <%= link_to new_todo_path, :remote=>true do%>
     <i class="fa fa-plus-square fa-3x" aria-hidden="true"></i>
@@ -11,7 +9,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+    <div class="[col-xs-12 col-sm-offset-2 col-sm-8]">
       <ul class="tecno-list">
           <% @todos.each do |todo| %>
               <li>
@@ -27,13 +25,13 @@
                 <div class="social">
                   <ul>
                     <li class="eye" style="width:33%;">
-                      <%= link_to todo, :remote=>true do %>
+                      <%= link_to todo do %>
                         <span class="fa fa-eye"></span>
                       <%end%>
                     </li>
 
                     <li class="pencil" style="width:34%;">
-                      <%= link_to edit_todo_path(todo), :remote=>true do%>
+                      <%= link_to edit_todo_path(todo) do%>
                         <span class="fa fa-pencil-square-o"></span>
                       <%end%>
                     </li>
